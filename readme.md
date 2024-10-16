@@ -22,9 +22,7 @@ It's easy to plug in more products as a detector in the code - pull requests for
 
 ## Usage
 
-You have multiple scenarios:
-
-1) Not elevated, and want a bash script that will nifo the AV:
+You're not elevated, and want a bash script that will nifo the AV/EDR when booting from another media:
 
 ```
 nifo.exe generate --method bash [--relativeto drive] > nifo.sh
