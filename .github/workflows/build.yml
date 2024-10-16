@@ -36,5 +36,5 @@ jobs:
         prerelease: true
         title: "Commit Build"
         files: |
-          nifo.exe
+          nifo*.exe
 
