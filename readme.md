@@ -6,6 +6,8 @@
 
 With a precision of a brain surgeon wielding a chainsaw, nifo can obliterate most AV/EDR products from endpoints or servers running the worlds most popular operating system, even if they're BitLocker protected - if you have physical access to the device and it's not totally locked down (BIOS password + SecureBoot + Harddrive Password + No USB Boot).
 
+![It was always the defrag API](nifo-meme.png)
+
 ## How does it work?
 
 Since security on Windows is an afterthought, the operating system can manage quite fine without any AV/EDR software installed. So if you want to disable AV/EDR, it's just a question of breaking it enough for it not to start up.
