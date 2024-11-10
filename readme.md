@@ -27,7 +27,7 @@ It's easy to plug in more products as a detector in the code - pull requests for
 You're not elevated, and want a bash script that will nifo the AV/EDR when booting from another media:
 
 ```
-nifo.exe generate --method bash [--relativeto drive] > nifo.sh
+nifo.exe generate --mode bash [--relativeto drive] > nifo.sh
 ```
 
 If you're elevated, you can use the `--relativeto drive' to get device offsets rather than partition offset.
