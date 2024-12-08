@@ -2,9 +2,9 @@
 
 *It's the only way to be sure.*
 
-**tl;dr: unprivileged user -> Defender removal on physical machine**
+**tl;dr: unprivileged Windows user -> physical machine access -> Defender removal**
 
-With a precision of a brain surgeon wielding a chainsaw, nifo can obliterate most AV/EDR products from endpoints or servers running the worlds most popular operating system, even if they're BitLocker protected - if you have physical access to the device and it's not totally locked down (BIOS password + SecureBoot + Harddrive Password + No USB Boot).
+With a precision of a brain surgeon wielding a chainsaw, nifo can obliterate most AV/EDR products from endpoints or servers running the worlds most popular operating system, even if they're BitLocker protected. This requires only unprvileged user accees to Windows and physical access to the device without proper BIOS hardening (see list of BIOS settings that prevent this at the end of document)
 
 ![It was always the defrag API](nifo-meme.png)
 
@@ -14,7 +14,7 @@ Since security on Windows is an afterthought, the operating system can manage qu
 
 While protections might be in place to prevent you from tampering directly with registry keys or files from inside the OS, nifo takes the direct approach and overwrites the first bytes of the target files while the operating system is not running - either by booting to Linux via USB or removing the harddrive and putting it in another system to do the same modifications.
 
-It makes no difference if the machine is BitLocker protected or not, since the task is not to write anything particular, just to corrupt the files enough for them not to load when booting. Nifty, I might say.
+By identifying the physical sector locations of essential AV/EDR files, we can overwrite these sectors from outside the Windows OS where no protections exist. It makes no difference if the machine is BitLocker protected or not, since the task is not to write anything particular, just to corrupt the files enough for them not to load when booting. Nifty, I might say.
 
 ## Supported (LOL) AV/EDR products
 
